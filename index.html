@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>More calculators</title>
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<h1>More calculators</h1>
+	<div class="content">
+		<div class="container">
+			<h2 class="subtitle">Annual growth</h2>
+			<br>
+			<div class="slidecontainer">
+				<h3>Start value <span class="right" id="start_value"></span></h3>
+				<input type="range" min="0" max="1000" value="100" step="1" class="slides" id="slider1">
+			</div>
+			<div class="slidecontainer">
+				<h3>End value <span class="right" id="end_value"></span></h3>
+				<input type="range" min="0" max="1000" value="200" step="1" class="slides" id="slider2">
+			</div>
+			<div class="slidecontainer">
+				<h3>Years <span class="right" id="ag_years"></span></h3>
+				<input type="range" min="0" max="60" value="5" step="1" class="slides" id="slider3">
+			</div>
+			<h1 class="result" id="annual_growth"></h1>
+		</div>
+		<div class="container">
+			<h2 class="subtitle">Compound interest</h2>
+			<br>
+			<div class="slidecontainer">
+				<h3>Principal <span class="right" id="principal"></span></h3>
+				<input type="range" min="0" max="100000" value="1000" step="500" class="slides" id="slider4">
+			</div>
+			<div class="slidecontainer">
+				<h3>Rate <span class="right" id="rate"></span></span></h3>
+				<input type="range" min="0" max="50" value="5" step="1" class="slides" id="slider5">
+			</div>
+			<div class="slidecontainer">
+				<h3>Periods (Compounds per year)<span class="right" id="periods"></span></span></h3>
+				<input type="range" min="1" max="12" value="1" step="1" class="slides" id="slider6">
+			</div>
+			<div class="slidecontainer">
+				<h3>Years <span class="right" id="ci_years"></span></span></h3>
+				<input type="range" min="0" max="50" value="10" step="1" class="slides" id="slider7">
+			</div>
+			<h2 class="result" id="compound_interest"></h2>
+		</div>
+		<div class="container">
+			<div class="slidecontainer">
+				<h2 class="subtitle">Pro-rata (monthly payments)</h2>
+				<br>
+				<h3>Monthly amount <span class="right" id="monthly_amount"></span></h3>
+				<input type="range" min="0" max="2000" value="1000" step="1" class="slides" id="slider9">
+			</div>
+			<div class="slidecontainer">
+				<h3>Number of days<span class="right" id="number_days"></span></h3>
+				<input type="range" min="1" max="30" value="5" step="1" class="slides" id="slider10">
+			</div>
+			<div class="slidecontainer">
+				<h3>Leap year?<span class="right" id="leap_year"></span></h3>
+				<input type="range" min="365" max="366" value="365" step="1" class="slides" id="slider11">
+			</div>
+			<h2 class="result" id="pro_rata"></h2>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
